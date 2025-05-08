@@ -1,0 +1,227 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li.active {
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.custom-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+#quote-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stock-lookup label,
+.stock-lookup input,
+.stock-lookup select,
+.stock-lookup button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #333; 
+}
+
+#stock-chart-container {
+    margin-top: 20px;
+}
+
+.reddit-stocks {
+    margin-top: 30px;
+}
+
+#reddit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#reddit-table th, #reddit-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#reddit-table th {
+    background-color: #f2f2f2;
+}
+
+.carousel-container {
+    width: 500px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#breed-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.breed-button {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    color: #333; 
+}
+
+.breed-button:hover {
+    background-color: #ddd;
+}
+
+#dog-info {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#dog-info h2 {
+    color: #333; 
+}
+
+#dog-info p {
+    color: #333; 
+}
+
+#audio-instructions {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    position: relative; 
+}
+
+#audio-instructions h3 {
+    color: white;
+    margin-top: 0;
+}
+
+#audio-instructions ul {
+    list-style: none;
+    padding: 0;
+}
+
+#audio-instructions ul li {
+    margin-bottom: 5px;
+}
+
+#audio-instructions button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#audio-instructions button:hover {
+    background-color: #4cae4c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex-grow: 1;
+
+}
+
+#audio-instructions {
+    order: 1; 
+}
+
+
+#dog-info {
+    margin-bottom: 80px; 
+}
+
+.reddit-stocks {
+    margin-bottom: 80px; 
+}

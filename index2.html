@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Activities</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-slider@2.4.0/dist/simple-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="script1.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="nav-item active" data-page="index2">Home</li>
+            <li class="nav-item" data-page="stocks">Stocks</li>
+            <li class="nav-item" data-page="dogs">Dogs</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to Class Activities!</h1>
+        <div id="quote-container">
+            <h2>Quote of the Day</h2>
+            <p id="quote-text"></p>
+            <p id="quote-author"></p>
+            <p><a href="https://zenquotes.io/" target="_blank">Inspirational quotes provided by ZenQuotes API</a></p>
+        </div>
+        <div class="button-container">
+            <button id="stocks-button" class="custom-button">Stocks</button>
+            <button id="dogs-button" class="custom-button">Dogs</button>
+        </div>
+    </div>
+
+    <div id="audio-instructions">
+        <h3>Audio Navigation</h3>
+        <p>On this page, you can say:</p>
+        <ul>
+            <li><strong>Hello</strong> - to get a greeting.</li>
+            <li><strong>Change the color to [color name]</strong> - to change the background color.</li>
+            <li><strong>Navigate to stocks</strong> - to go to the stocks page.</li>
+            <li><strong>Navigate to dogs</strong> - to go to the dogs page.</li>
+        </ul>
+        <button id="turn-on-audio">Turn On Audio</button>
+        <button id="turn-off-audio">Turn Off Audio</button>
+    </div>
+</body>
+</html>
