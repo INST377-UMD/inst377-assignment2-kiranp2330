@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-slider@2.4.0/dist/simple-slider.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-slider@2.4.0/dist/simple-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="nav-item" data-page="index2">Home</li>
+            <li class="nav-item" data-page="stocks">Stocks</li>
+            <li class="nav-item active" data-page="dogs">Dogs</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Dog Breeds</h1>
+        <div class="carousel-container" data-simple-slider>
+        </div>
+
+        <div id="breed-buttons-container">
+        </div>
+
+        <div id="dog-info" style="display: none;">
+            <h2>Breed Information</h2>
+            <p id="breed-name"></p>
+            <p id="breed-description"></p>
+            <p id="breed-life"></p>
+            <p id="breed-weight"></p>
+            <p id="breed-hypoallergenic"></p>
+        </div>
+    </div>
+
+    <div id="audio-instructions">
+        <h3>Audio Navigation</h3>
+        <p>On this page, you can say:</p>
+        <ul>
+            <li><strong>Hello</strong> - to get a greeting.</li>
+            <li><strong>Change the color to [color name]</strong> - to change the background color.</li>
+            <li><strong>Navigate to home</strong> - to go to the home page.</li>
+            <li><strong>Navigate to stocks</strong> - to go to the stocks page.</li>
+            <li><strong>Load dog breed [breed name]</strong> - to load information about a specific breed.</li>
+        </ul>
+        <button id="turn-on-audio" class="custom-button">Turn On Audio</button>
+        <button id="turn-off-audio" class="custom-button">Turn Off Audio</button>
+    </div>
+
+    <script src="script1.js"></script>
+    <script src="dogs.js"></script>
+</body>
+</html>

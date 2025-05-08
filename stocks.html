@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-slider@2.4.0/dist/simple-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="nav-item" data-page="index2">Home</li>
+            <li class="nav-item active" data-page="stocks">Stocks</li>
+            <li class="nav-item" data-page="dogs">Dogs</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Stocks Information</h1>
+        <div class="stock-lookup">
+            <label for="stock-ticker">Enter Stock Ticker:</label>
+            <input type="text" id="stock-ticker" placeholder="e.g., AAPL">
+            <label for="days">Select Time Range:</label>
+            <select id="days">
+                <option value="30">30 Days</option>
+                <option value="60">60 Days</option>
+                <option value="90">90 Days</option>
+            </select>
+            <button id="lookup-stock" class="custom-button">Lookup Stock</button>
+            <div id="stock-chart-container">
+                <canvas id="stockChart"></canvas>
+            </div>
+        </div>
+
+        <div class="reddit-stocks">
+            <h2>Top 5 Stocks on Reddit</h2>
+            <table id="reddit-table">
+                <thead>
+                    <tr>
+                        <th>Ticker</th>
+                        <th>Comment Count</th>
+                        <th>Sentiment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="audio-instructions">
+        <h3>Audio Navigation</h3>
+        <p>On this page, you can say:</p>
+        <ul>
+            <li><strong>Hello</strong> - to get a greeting.</li>
+            <li><strong>Change the color to [color name]</strong> - to change the background color.</li>
+            <li><strong>Navigate to home</strong> - to go to the home page.</li>
+            <li><strong>Navigate to dogs</strong> - to go to the dogs page.</li>
+            <li><strong>Lookup [stock ticker]</strong> - to search for a stock (e.g., "Lookup MSFT").</li>
+        </ul>
+        <button id="turn-on-audio">Turn On Audio</button>
+        <button id="turn-off-audio">Turn Off Audio</button>
+    </div>
+
+    <script src="script1.js"></script>
+    <script src="stocks.js"></script>
+</body>
+</html>
