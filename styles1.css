@@ -111,8 +111,8 @@ h1, h2, h3 {
 }
 
 .carousel-container {
-    width: 500px; /* Adjust as needed */
-    height: 300px; /* Adjust as needed */
+    width: 500px; 
+    height: 300px; 
     overflow: hidden;
     margin: 20px auto;
 }
